@@ -1,0 +1,82 @@
+/* comon section */
+
+#headSec .col-4 .imgdiv{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+#headSec .col-4 .imgdiv1{
+    position: absolute;
+    transition: 1s;
+} 
+#headSec .col-4 .imgdiv .infoimg{
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    width: 100%;
+    height: 380px;
+    transition: 0.7s;
+    background: linear-gradient(to top, black 0%, transparent 70%, transparent 100%)
+}
+#headSec .col-4 .imgdiv .imghed{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -500px;
+    left: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+    padding: 20px
+}
+#headSec .col-4 .imgdiv .infoimg:hover{
+    display: block;
+    top: 0px;
+    left: 0px;
+}
+#headSec .col-4 .imgdiv .infoimg:hover+.imghed{
+    display: block;
+    bottom: 80px;
+    left: 10px;
+}
+
+#headSec .col-4 .imgdiv .imghed1{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -505px;
+    padding-left: 40px;
+    left: 0px;
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+    transition: 1.2s
+}
+#headSec .col-4 .imgdiv .infoimg:hover~.imghed1{
+    display: block;
+    bottom: 40px;
+    left: -10px;
+}
+#headSec .col-4 .imgdiv:hover .imghed1{
+    display: block;
+    bottom: 40px;
+    left: -10px;
+}
+#headSec .col-4 .imgdiv:hover .infoimg{
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+}
+#headSec .col-4 .imgdiv:hover .imghed{
+    display: block;
+    bottom: 80px;
+    left: 10px;
+}
+#headSec .col-4 .imgdiv .imgdiv1:hover .imghed1{
+    visibility:visible;
+    bottom: 40px;
+    left: -10px;
+}

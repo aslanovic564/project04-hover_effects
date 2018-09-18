@@ -1,0 +1,1566 @@
+#header .row .col-4 div .headerimg {
+    width: 100%;
+    height: 300px;
+    transition: 0.7s;
+    transform: rotateX(70deg);
+    transform-style: preserve-3d;
+}
+
+.bottom {
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    transition: all .8s;
+}
+
+#header .row .col-4 div {
+    perspective: 5000px;
+}
+
+#header .row .col-4 div .headerimg:hover {
+    transform: rotateX(20deg)
+}
+
+#header .row .col-4 div .headerimg a {
+    background: url(img/qrup.jpg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.95, -0.29, 0, 0.96);
+}
+
+/* next effect */
+#header .col-5 div .headerA {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transition: 0.7s;
+    transform: rotatey(80deg);
+    transform-style: preserve-3d;
+}
+
+#header .col-5 div .headerA a {
+    background: url(img/creative.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 300px;
+    transition-timing-function: cubic-bezier(0.95, -0.29, 0, 0.96);
+}
+
+#header .col-5 div {
+    perspective: 5000px
+}
+
+#header .col-5 div .headerA .bottom {
+    position: absolute;
+    left: 0;
+    background: gray;
+    width: 100%;
+    height: 50px;
+    transform-origin: bottom;
+    transform: rotatex(90deg);
+}
+
+#header .col-5 div .headerA:hover {
+    transform: rotateX(20deg)
+}
+
+/* next :hover */
+#header .col-3 div .headerB {
+    width: 100%;
+    height: 250px;
+    transition: 0.7s;
+    transform: rotatey(50deg);
+    /* transform: rotateX(30deg); */
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+#header .col-3 div .headerB:hover {
+    transform: rotateX(60deg)
+}
+
+#header .col-3 div {
+    perspective: 1000px;
+}
+
+#header .col-3 div .headerB a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(img/03.jpg)
+}
+
+#header .col-3 div .headerB .bottom {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    background: red;
+    transform-origin: bottom;
+    transform: rotateX(90deg)
+}
+
+#header .col-3 div .headerB .bottom2 {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: red;
+    transform-origin: left;
+    transform: rotatey(90deg)
+}
+
+/* hover7 section */
+
+#effect7 .col-3 .effectimg {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    margin: 10px;
+    display: inline-block;
+}
+
+#effect7 .col-3 .effectimg .effectimg1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect7 .col-3 .effectimg img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.4);
+    transition: 1s;
+    opacity: 1;
+}
+
+#effect7 .col-3 .effectimg:hover img {
+    transform: scale(1.2);
+    filter: blur(3px) brightness(0.6)
+}
+
+#effect7 .col-3 .effectimg .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: rgba(0, 0, 255, 0.034);
+    transition: 1s;
+    text-align: center;
+}
+
+#effect7 .col-3 .effectimg .overlay h1 {
+    padding-top: 50px;
+    /* padding-left: 30px; */
+    color: white;
+    /* top: 30%;
+    left: 20%; */
+    font-size: 20px;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+
+#effect7 .col-3 .effectimg .overlay p {
+    position: absolute;
+    color: white;
+    top: 40%;
+    /* left: 20%; */
+    font-size: 15px;
+    text-transform: uppercase;
+    visibility: hidden;
+    font-style: italic;
+}
+
+#effect7 .col-3 .effectimg:hover .overlay {
+    top: 0px;
+
+}
+
+#effect7 .col-3 .effectimg:hover h1 {
+    visibility: visible;
+    top: 30%;
+    left: 20%;
+    transition: 0.3s;
+}
+
+#effect7 .col-3 .effectimg:hover p {
+    visibility: visible;
+    top: 40%;
+    left: 20%;
+    transition: 0.3s;
+}
+
+/* effect8 section */
+#effect8 .col-4 .effectcol {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+#effect8 .col-4 .effectcol .effect8img img {
+    width: 100%;
+    height: 100%;
+}
+
+#effect8 .col-4 .effectcol .effect8img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect8 .col-4 .effectcol .overlay8 {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    background: rgba(0, 0, 255, 0.568);
+    transform: skew(-45deg);
+    transition: 1s
+}
+
+#effect8 .col-4 .effectcol:hover .overlay8 {
+    width: 100%;
+    height: 100%;
+    transform: skew(-45deg) scaleX(1);
+    top: 0%;
+    left: 0%;
+}
+
+#effect8 .col-4 .effectcol:hover h1 {
+    visibility: visible;
+    top: 30%;
+    left: 20%;
+    transition: 1s
+}
+
+#effect8 .col-4 .effectcol:hover p {
+    visibility: visible;
+    top: 40%;
+    left: 20%;
+    transition: 1s
+}
+
+#effect8 .col-4 .effectcol:hover a {
+    visibility: visible;
+    top: 60%;
+    left: 40%;
+}
+
+#effect8 .col-4 .effectcol h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+#effect8 .col-4 .effectcol p {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+#effect8 .col-4 .effectcol a {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    border: 1px solid black;
+    color: black;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-size: 13px;
+    border-radius: 30px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+/* effect9 section */
+#effect9 .col-4 .effectcol {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+#effect9 .col-4 .effectcol .effect9img img {
+    width: 100%;
+    height: 100%;
+}
+
+#effect9 .col-4 .effectcol .effect9img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect9 .col-4 .effectcol .overlay9 {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    background: rgba(0, 0, 255, 0.568);
+    transform: skew(45deg);
+    transition: 1s
+}
+
+#effect9 .col-4 .effectcol:hover .overlay9 {
+    width: 100%;
+    height: 100%;
+    transform: skew(45deg) scaleX(1);
+    top: 0%;
+    left: 0%;
+}
+
+#effect9 .col-4 .effectcol:hover h1 {
+    visibility: visible;
+    top: 30%;
+    left: 20%;
+    transition: 1s
+}
+
+#effect9 .col-4 .effectcol:hover p {
+    visibility: visible;
+    top: 40%;
+    left: 20%;
+    transition: 1s
+}
+
+#effect9 .col-4 .effectcol:hover a {
+    visibility: visible;
+    top: 60%;
+    left: 40%;
+}
+
+#effect9 .col-4 .effectcol h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+#effect9 .col-4 .effectcol p {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+#effect9 .col-4 .effectcol a {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    border: 1px solid black;
+    color: black;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-size: 13px;
+    border-radius: 30px;
+    color: white;
+    visibility: hidden;
+    transition: 1s
+}
+
+
+/*  <!-- effect10 section --> */
+
+
+#effect10 .col-3 .effect10col {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+#effect10 .col-3 .effect10col .effect10img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+#effect10 .col-3 .effect10col .overlay10 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0.596);
+    transition: 0.5s;
+}
+
+#effect10 .col-3 .effect10col .overlay10 h1 {
+    visibility: visible;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+#effect10 .col-3 .effect10col .overlay10 p:nth-of-type(1) {
+    position: absolute;
+    visibility: visible;
+    top: 35%;
+    left: 20%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+#effect10 .col-3 .effect10col .overlay10 p:nth-of-type(2) {
+    position: absolute;
+    visibility: visible;
+    top: 45%;
+    left: 20%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#effect10 .col-3 .effect10col:hover .overlay10 {
+    transform: skew(45deg);
+    top: 0%;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+}
+
+#effect10 .col-3 .effect10col:hover h1 {
+    visibility: hidden;
+}
+
+#effect10 .col-3 .effect10col:hover p:nth-of-type(1) {
+    visibility: hidden;
+}
+
+#effect10 .col-3 .effect10col:hover p:nth-of-type(2) {
+    visibility: hidden;
+}
+
+#effect10 .col-3 .effect10col .effect10img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* <!-- effect11 section --> */
+#effect11 .effect11col {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#effect11 .effect11col .effect11img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    /* transition: all 0.5s; */
+}
+
+#effect11 .effect11col .effect11img img {
+    width: 100%;
+    height: 100%;
+}
+
+#effect11 .effect11col .overlay11 {
+    width: 90%;
+    height: 0%;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.192);
+    top: 50%;
+    left: calc(50% - 45%);
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+#effect11 .effect11col h2 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    visibility: hidden;
+    /* transition: 0.4s; */
+}
+
+#effect11 .effect11col h1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+    /* transition: 0.4s; */
+}
+
+#effect11 .effect11col p {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    visibility: hidden;
+    box-sizing: border-box;
+    /* transition: 0.1s; */
+
+}
+
+#effect11 .effect11col:hover .overlay11 {
+    visibility: visible;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.685);
+    top: calc(50% - 45%);
+    left: calc(50% - 45%);
+}
+
+#effect11 .effect11col:hover h2 {
+    visibility: visible;
+    top: 30%;
+    left: 20%;
+}
+
+#effect11 .effect11col:hover h1 {
+    visibility: visible;
+    top: 40%;
+    left: 20%;
+}
+
+#effect11 .effect11col:hover p {
+    visibility: visible;
+    top: 50%;
+    left: 20%;
+}
+
+/* <!-- effect12 section --> */
+
+
+
+#effect12 .col-4 .effect12col {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+#effect12 .col-4 .effect12col .effect12img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+#effect12 .col-4 .effect12col .overlay12 {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.363);
+    text-align: right;
+    transition: 0.1s
+}
+
+#effect12 .col-4 .effect12col h1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 0%;
+    height: 100%;
+    visibility: hidden;
+    color: white;
+    font-size: 0px;
+    text-transform: uppercase;
+    transition: 0.3s
+}
+
+#effect12 .col-4 .effect12col h2 {
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    width: 0%;
+    height: 100%;
+    color: white;
+    font-size: 0px;
+    font-weight: bold;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: 0.3s
+}
+
+#effect12 .col-4 .effect12col .line1 {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 0%;
+    height: 90%;
+    border-right: 5px solid white;
+    background: rgba(255, 255, 255, 0.623);
+    transition-duration: 0.4s;
+    transition-delay: .3s;
+    visibility: hidden;
+
+}
+
+#effect12 .col-4 .effect12col p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 0px;
+    text-transform: uppercase;
+    transition-delay: .2s;
+    visibility: hidden;
+
+
+}
+
+#effect12 .col-4 .effect12col .effect12img img {
+    width: 100%;
+    height: 100%;
+}
+
+#effect12 .col-4 .effect12col:hover .overlay12 {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-delay: 0.2
+}
+
+#effect12 .col-4 .effect12col:hover h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    top: 20%;
+    left: 10%;
+    visibility: visible;
+}
+
+#effect12 .col-4 .effect12col:hover h2 {
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    font-size: 17px;
+    left: 10%;
+    opacity: 1;
+}
+
+#effect12 .col-4 .effect12col:hover p {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    top: 50%;
+    left: 10%;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+#effect12 .col-4 .effect12col:hover .line1 {
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    top: 5%;
+    background: transparent;
+    visibility: visible;
+    transition-delay: 0s;
+
+}
+
+/* effect14 section */
+
+
+#effect14 .col-4 .effect14col {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+#effect14 .col-4 .effect14col .effect14img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect14 .col-4 .effect14col .effect14img img {
+    width: 100%;
+    height: 100%;
+}
+
+#effect14 .col-4 .effect14col .overlay14 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.568);
+    position: absolute;
+    transition: 0s;
+    visibility: hidden;
+}
+
+#effect14 .col-4 .effect14col:hover .overlay14 {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+    visibility: visible;
+}
+
+#effect14 .col-4 .effect14col .bottom14 {
+    width: 0%;
+    height: 85%;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    background: rgba(255, 255, 255, 0.116);
+    position: absolute;
+    left: 50%;
+    top: 7.5%;
+    transition-delay: 0.3s;
+    transition: 0.8s;
+    visibility: hidden;
+}
+
+#effect14 .col-4 .effect14col:hover .bottom14 {
+    width: 85%;
+    height: 85%;
+    left: 7%;
+    top: 7.5%;
+    transition: 0.8s;
+    visibility: visible;
+}
+
+#effect14 .col-4 .effect14col h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    color: white;
+    transition-delay: 0s;
+    transition: 0s;
+    visibility: hidden;
+}
+
+#effect14 .col-4 .effect14col h2 span {
+    font-weight: bold;
+    color: white;
+}
+
+#effect14 .col-4 .effect14col:hover h2 {
+    top: 10%;
+    left: 8%;
+    transition-delay: 0.5s;
+    visibility: visible;
+}
+
+#effect14 .col-4 .effect14col p {
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    color: white;
+    transition-delay: 0s;
+    visibility: hidden;
+}
+
+#effect14 .col-4 .effect14col:hover p {
+    visibility: visible;
+    top: 40%;
+    left: 8%;
+    transition-delay: 0.5s;
+}
+
+/* <!-- effect18 section --> */
+#effect18 .col-4 .effect18col {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#effect18 .col-4 .effect18col:hover img {
+    filter: drop-shadow(10px 10px 10px);
+    transition: 0.3s;
+    transform: scale3d(1, 1, 1);
+}
+
+#effect18 .col-4 .effect18col .effect18img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+}
+
+#effect18 .col-4 .effect18col .overlay18 {
+    height: 0%;
+    width: 1%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transition: 0.3s
+}
+
+#effect18 .col-4 .effect18col:hover .overlay18 {
+    width: 1%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    background: red;
+    visibility: visible;
+}
+
+#effect18 .col-4 .effect18col .line18one {
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    bottom: 0%;
+    left: 49%;
+    background: white;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+#effect18 .col-4 .effect18col .line18one h2 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    opacity: 0;
+}
+
+#effect18 .col-4 .effect18col:hover h2 {
+    opacity: 1;
+}
+
+#effect18 .col-4 .effect18col .line18too p {
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 30px;
+    opacity: 0;
+}
+
+#effect18 .col-4 .effect18col:hover p {
+    opacity: 1;
+}
+
+#effect18 .col-4 .effect18col .line18one h2 span {
+    font-weight: bold;
+}
+
+#effect18 .col-4 .effect18col:hover .line18one {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.3s;
+    visibility: visible;
+}
+
+#effect18 .col-4 .effect18col .line18too {
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    bottom: 0%;
+    left: 51%;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+#effect18 .col-4 .effect18col:hover .line18too {
+    height: 100%;
+    width: 49%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: white;
+    transition: 0.3s;
+    visibility: visible;
+}
+
+#effect18 .col-4 .effect18col .corner18 {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3 20%,
+        #cccccc 38%, #bbbbbb 44%, #aaaaaa 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658)
+}
+
+#effect18 .col-4 .effect18col:hover .corner18 {
+    width: 14%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3 20%,
+        #cccccc 38%, #bbbbbb 44%, #aaaaaa 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
+    transition: 0.4s
+}
+
+
+
+
+
+
+
+/* effect19 section */
+#effect19 .col-4 .effect19col {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+#effect19 .col-4 .effect19col .effect19img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect19 .col-4 .effect19col .overlay19 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.548);
+    opacity: 0;
+}
+
+#effect19 .col-4 .effect19col .lineupdown {
+    width: 0%;
+    height: 85%;
+    position: absolute;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    top: 5%;
+    left: 50%;
+    background: transparent;
+    transition: 0.7s
+}
+
+#effect19 .col-4 .effect19col .overlay19 h2 {
+    padding-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.4s
+}
+
+#effect19 .col-4 .effect19col .overlay19 p {
+    padding: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1cm
+}
+
+#effect19 .col-4 .effect19col .lineleftright {
+    width: 86%;
+    height: 0%;
+    position: absolute;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    top: 50%;
+    left: 5%;
+    background: transparent;
+    transition: 0.7s
+}
+
+#effect19 .col-4 .effect19col:hover .lineleftright {
+    width: 86%;
+    height: 87%;
+    top: 5%;
+    left: 5%;
+}
+
+#effect19 .col-4 .effect19col:hover .lineupdown {
+    width: 87%;
+    height: 85%;
+    top: 5%;
+    left: 5%;
+}
+
+#effect19 .col-4 .effect19col:hover .overlay19 {
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    transition: 0.3s
+}
+
+#effect19 .col-4 .effect19col:hover h2 {
+    padding-top: 30px;
+}
+
+
+/* effect20 section */
+
+
+#effect20 .col-4 .effect20col {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+#effect20 .col-4 .effect20col .effect20img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#effect20 .col-4 .effect20col .overlay20 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.342);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#effect20 .col-4 .effect20col:hover .overlay20 {
+    top: 0%;
+    left: 0%;
+    opacity: 1
+}
+
+#effect20 .effect20col .line20one h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: white;
+    visibility: hidden;
+}
+
+#effect20 .effect20col .line20one h2 span {
+    font-weight: bold;
+    margin: 15px;
+}
+
+#effect20 .effect20col .line20one {
+    width: 96%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    background: rgba(0, 0, 0, 0.473);
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+#effect20 .effect20col .line20too {
+    width: 96%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    background: rgba(245, 245, 245, 0.863);
+    border-top: 1px solid rgb(255, 255, 255);
+    transition: 0.4s;
+    text-align: center;
+    visibility: hidden;
+}
+
+#effect20 .effect20col .line20too p {
+    color: black;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 30px;
+    visibility: hidden;
+
+}
+
+#effect20 .col-4 .effect20col:hover .line20too {
+    visibility: visible;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    transition: 0.4s
+}
+
+#effect20 .col-4 .effect20col:hover h2 {
+    visibility: visible;
+}
+
+#effect20 .col-4 .effect20col:hover p {
+    visibility: visible;
+}
+
+#effect20 .col-4 .effect20col:hover .line20one {
+    visibility: visible;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    transition: 0.4s
+}
+
+#effect20 .col-4 .effect20col .corner3 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3 20%,
+        #cccccc 38%, #bbbbbb 44%, #aaaaaa 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+#effect20 .col-4 .effect20col:hover .corner3 {
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3 20%, #cccccc 38%, #bbbbbb 44%, #aaaaaa 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+}
+
+#effect20 .col-4 .effect20col .centerline {
+    width: 0%;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.2s
+}
+
+#effect20 .col-4 .effect20col:hover .centerline {
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 0%
+}
+
+/*     <!-- effect21 section --> */
+/* @keyframes transition{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0%);}
+
+} */
+@keyframes transition2 {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes transition1 {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(50%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    75% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#effect16 .col-4 .effect16col {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 15px gray;
+    /* background: linear-gradient(135deg, blue 10%, red 20%, silver 35%, gray 45%, black 50%, 
+    yellow 60%, white 70%, brown 80%, #3F3322 90%, #DEDEDE 100%) */
+}
+
+#effect16 .col-4 .effect16col .animation16 {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background: url(img/qrup.jpg);
+    background-position: center;
+    background-size: cover;
+    animation-name: transition2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 0 10px 15px gray;
+}
+
+#effect16 .col-4 .effect16col .animation16 .content16 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.521);
+}
+
+#effect16 .col-4 .effect16col .animation16 .overlay16 {
+    width: 90%;
+    height: 90%;
+    border: 3px solid white;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+
+#effect16 .col-4 .effect16col .animation16 .overlay16 h1 {
+    position: absolute;
+    text-transform: uppercase;
+    top: 10%;
+    left: 20%;
+    font-size: 20px;
+    color: white;
+    animation-name: transition1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+#effect16 .col-4 .effect16col .animation16 .overlay16 p {
+    position: absolute;
+    text-transform: uppercase;
+    top: 30%;
+    left: 20%;
+    font-size: 13px;
+    color: white;
+    animation-name: transition1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+/* free section */
+#freeSec .col-4 .freecol {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+#freeSec .col-4 .freecol .freeimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#freeSec .col-4 .freecol .linefree1 {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.801);
+    transition: 0.2s;
+    visibility: hidden;
+
+}
+
+#freeSec .col-4 .freecol .linefree2 {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    background: rgba(0, 0, 0, 0.651);
+    transition: 0.2s;
+    visibility: hidden;
+
+}
+
+#freeSec .col-4 .freecol:hover .linefree2 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transition-delay: 0s;
+    visibility: visible;
+
+}
+
+#freeSec .col-4 .freecol:hover .linefree1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition-delay: 0s;
+    visibility: visible;
+
+}
+
+#freeSec .col-4 .freecol .linefree1 h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 10px;
+    opacity: 0
+}
+
+#freeSec .col-4 .freecol:hover h2 {
+    opacity: 1
+}
+
+#freeSec .col-4 .freecol .linefree2 p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-left: 10px;
+    opacity: 0
+}
+
+#freeSec .col-4 .freecol:hover p {
+    opacity: 1
+}
+
+#freeSec .col-4 .freecol .corner {
+    width: 0%;
+    height: 0%;
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.801) 0%,
+        rgba(192, 192, 192, 0.87) 20%, rgba(192, 192, 192, 0.925) 40%,
+        rgba(192, 192, 192, 0.925) 50%, rgba(0, 0, 0, 0.918) 65%,
+        rgba(0, 0, 0, 0.733) 75%, rgba(0, 0, 0, 0.637) 100%);
+    box-shadow: 1px 2px 50px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: .4s
+}
+
+#freeSec .col-4 .freecol:hover .corner {
+    width: 18%;
+    height: 20%;
+    bottom: 0%;
+    right: 0%;
+}
+
+
+#freeSec .col-4 .freecol2 {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#freeSec .col-4 .freecol2 .freeimg2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s;
+    /*  */
+    visibility: visible;
+    z-index: 10;
+}
+
+#freeSec .col-4 .freecol2:hover .freeimg2 {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+#freeSec .col-4 .freecol2 .content2 {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    position: absolute;
+    top: 0%;
+    transform: rotateY(-180deg);
+    transform-origin: top;
+    transition: 1s;
+    z-index: 1;
+}
+
+#freeSec .col-4 .freecol2:hover .content2 {
+    visibility: visible;
+    transform: rotateY(0deg);
+    z-index: 10;
+}
+
+/* <!-- box sectioon --> */
+
+#faleSec .col-4 .falecol {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    perspective: 5000px;
+}
+
+#faleSec .col-4 .falecol .faleImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    transition: 1s
+}
+
+#faleSec .col-4 .falecol .faleback {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 255);
+    z-index: 2;
+    transform: rotateY(-180deg);
+    transition: 1s;
+}
+
+#faleSec .col-4 .falecol:hover .faleImg {
+    position: relative;
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+
+#faleSec .col-4 .falecol:hover .faleback {
+    transform: rotateY(0deg);
+    top: 0;
+    background: rgb(0, 0, 255);
+    z-index: 5;
+}
+
+/* <!-- footpol section --> */
+#footPol .col-4 .footcol {
+    width: 300px;
+    height: 250px;
+    transition: 1s;
+    position: relative;
+    perspective: 1000px;
+}
+#footPol .col-4 .footcol:hover .footimg{
+    transform: rotateX(20deg);
+    transition: 1s;
+}
+#footPol .col-4 .footcol .footimg{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(70deg);
+    transition: 1s;
+}
+#footPol .col-4 .footcol .footimg .footnew{
+    width: 300px;
+    height: 100%;
+    background: url(img/03.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#footPol .col-4 .footcol .footimg .footower{
+    width: 100%;
+    height: 20%;
+    background: blue;
+    position: absolute;
+    bottom: 0%;
+    transform-origin: bottom;
+    transform: rotateX(90deg)
+}
+/* setpol section  */
+#setpol .col-4 .setcol{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    perspective: 2000px;
+}
+#setpol .col-4 .setcol .setimg{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+}
+#setpol .col-4 .setcol .setimg .setpolimg{
+ width: 100%;
+ height: 100%;
+ position: relative;
+}
+
+#setpol .col-4 .setcol .setimg .bottomset{
+    width: 100%;
+    height: 30%;
+    background: red;
+    position: absolute;
+    bottom: 0%;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}

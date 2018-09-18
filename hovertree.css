@@ -1,0 +1,46 @@
+#headerSec .col-3 .getRow{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#headerSec .col-3 .getRow .getimg{
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    height: 280PX;
+    overflow: hidden;
+}
+#headerSec .col-3 .getRow .overlay{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 92%;
+    height: 260px;
+    background: white;
+    transform:  rotateY(270deg);
+    transform-origin: 50%;
+    transition: 1s;
+}
+#headerSec .col-3 .getRow .overlay h1{
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px
+
+}
+#headerSec .col-3 .getRow .overlay p{
+    color: black;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 10px
+}
+
+
+#headerSec .col-3 .getRow:hover .overlay{
+    transform: rotateY(360deg);
+    /* transform-origin: 50%; */
+    top: 10px;
+    left: 10px;
+}
